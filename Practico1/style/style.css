@@ -1,0 +1,110 @@
+html,body{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    background-image: url(/imagenes/fondo.jpg);
+    background-position: 50%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.conteiner{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.conteiner-calculator{
+    width: 30%;
+    height: 80%;
+    border: 1px solid #2db6aa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   flex-direction: column;
+   background-color: #292a2b;
+   border-radius: 40px;
+   border: 4px solid #000000;
+   margin: 5%;
+   box-shadow:10px 10px 50px 20px;
+}
+.conteiner-calculator-display{
+    width: 90%;
+    height: 20%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    background-color: #a3dbfc;
+    border-radius: 30px;
+    margin: 5%;
+    font-size: 200px;
+    overflow: hidden;
+    box-shadow:0px 0px 50px ;
+}
+
+
+.conteiner-calculator-num{
+    width: 90%;
+    display: grid;
+    grid-template-rows: 200px 200px 200px 200px ;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    
+  
+}
+.conteiner-calculator-num img{
+    width: 40%;
+  
+
+}
+.grid-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 130px;
+    text-align: center;
+    border: 1px solid #56c522;
+    border-radius: 30px;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #000000;
+
+}
+.grid-item-o{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid #000000;
+    font-size: 200px;
+    text-align: center;
+    border-radius: 30px;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #ffffff;
+    
+}
+.grid-item-i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 200px;
+    text-align: center;
+    background-color: #ff1100;
+    border: 1px solid #ffffff;
+    border-radius: 30px;
+    color: #ffffff;
+    cursor: pointer;
+}
+.grid-item:active {
+    transform: translateY(10px);
+}
+.grid-item-o:active {
+    transform: translateY(10px);
+}
+.grid-item-i:active {
+    transform: translateY(10px);
+}
+

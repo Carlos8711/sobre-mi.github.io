@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+
+    
+    <div class="conteiner">
+        <div class="conteiner-calculator">
+            <div class="conteiner-calculator-display" id="dis">
+                <h2></h2>
+
+            </div>
+
+            <div class="conteiner-calculator-num">
+                <div class="grid-item" id="ON" onclick="encender(id)">ON</div>
+                <div class="grid-item" id="CE" onclick="cancelaru()">CE</div>
+                <div class="grid-item" id="C" onclick="cancelar()">C</div>
+                <div class="grid-item-o" id="<" onclick="borrarc()"><img src="./imagenes/borrar.png" alt=""></div>
+                <div class="grid-item" id="7" onclick="obtener(id)">7</div>
+                <div class="grid-item" id="8" onclick="obtener(id)">8</div>
+                <div class="grid-item" id="9" onclick="obtener(id)">9</div>
+                <div class="grid-item-o "id="/"onclick="dividir(id)"><img src="./imagenes/div.png" alt=""></div>
+                <div class="grid-item" id="4"onclick="obtener(id)">4</div>
+                <div class="grid-item" id="5"onclick="obtener(id)">5</div>
+                <div class="grid-item" id="6"onclick="obtener(id)">6</div>
+                <div class="grid-item-o" id="x"onclick="multiplicar(id)"><img src="./imagenes/multi.png" alt=""></div>
+                <div class="grid-item" id="1"onclick="obtener(id)">1</div>
+                <div class="grid-item" id="2"onclick="obtener(id)">2</div>
+                <div class="grid-item"id="3"onclick="obtener(id)">3</div>
+                <div class="grid-item-o"id="-"onclick="restar(id)"><img src="./imagenes/resta.png" alt=""></div>
+                <div class="grid-item" id="0"onclick="obtener(id)">0</div>
+                <div class="grid-item" id="."onclick="obtener(id)">.</div>
+                <div class="grid-item-i"id="="onclick="resolver()">=</div>
+                <div class="grid-item-o"id="+"onclick="sumar(id)"><img src="./imagenes/suma.png" alt=""></div>
+    
+            </div>
+
+        </div>
+    
+    </div>
+    
+</body>
+<script src="./script/script.js"></script>
+</html>
