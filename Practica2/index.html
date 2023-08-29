@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>ROCK-PAPER-SCISSORS</title>
+</head>
+<body>
+
+    <div class="conteiner">
+        <div class="conteiner-title">
+            <div>
+                <h2 id="pi"> ROCK </h2>
+                <h2 id="pa"> PAPER </h2>
+                <h2 id="ti"> SCISSORS </h2>
+            </div>>
+                     
+        </div>
+        <div class="conteiner-enter-name" id="conteiner-enter-name">
+            <div class="enter-name" id="enter-name">
+                <div>
+                    <h2>Enter your name to start playing</h2>
+                </div>
+                <form >
+                    <label for="nameu">(4 to 7 characters):</label>
+                    <input type="text" autocomplete="off" id="nameu" name="USER" required minlength="7" maxlength="6"  />
+                    <button id="send" onclick="entergame()">START</button>
+                </form>
+                
+
+            </div>
+           
+        </div>
+
+        <div class="conteiner-game" id="conteiner-game">
+
+            <div class="conteiner-name-player">
+                <div class="name-player"><h2 id="name-player"></h2></div>
+                <div class="selection-player" id="selection-player"></div>
+                <div class="vs"><h2 id="vs"></h2></div>
+                <div class="selection-cpu" id="selection-cpu"></div>
+                <div class="name-cpu"><h2 id="name-cpu"></h2></div>
+               
+            </div>
+            
+            <div class="conteiner-score">
+                
+                <div class="score-player"><h3 id="score-player"></h3></div>
+                <div class="score-cpu"><h3 id="score-cpu"></h3></div>
+             </div>
+             
+            <div class="conteiner-option">
+
+                <div class="conteiner-rock">
+                    <div class="rock" id="rock"  onclick="selectuser(id)"><img src="./rock2.png" alt="" class="img-rock" ></div>
+                </div>
+                <div class="conteiner-paper">
+                    <div class="paper" id="paper"  onclick="selectuser(id)"><img src="./paper2.png" alt="" class="img-paper" ></div>
+                    </div>
+                <div class="conteiner-scissors">
+                    <div class="scissors" id="scissors"  onclick="selectuser(id)"><img src="./scissors2.png" alt="" class="img-scissors" ></div>
+                </div>
+
+             </div>
+             <div class="conteiner-reset">
+                <div class="reset" id="duel-x3" onclick="duelx3()"><h2>DUEL x3</h2></div>
+                <div class="reset" id="duel-x5" onclick="duelx5()"><h2>DUEL x5</h2></div>
+                <div class="reset" id="reset-name" onclick="resetn()"><h2 id="reset-name-h2">RENAME</h2></div>
+                <div class="reset" id="reset-point" onclick="resetp()"><h2>RESTART POINT</h2></div>
+                
+                
+        
+             </div>
+
+        </div>
+        
+    </div>
+    
+</body>
+<script src="./script.js"></script>
+</html>
